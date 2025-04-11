@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
+    "baseUrl": ".", // Ensure baseUrl is set to the root directory
     "paths": {
-      "@/*": ["./*"]
+      "@lib/*": ["./lib/*"] // Add this to point to the lib folder
     }
   }
 }
