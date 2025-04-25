@@ -41,14 +41,14 @@ export function FeaturesSectionDemo() {
     {
       title: "Robotics for Every Terrain – Land, Water & Air",
       description:
-        "Capture stunning photos effortlessly using our advanced AI technology.",
+        "Robotics that Conquer Land, Water, and Air with Intelligent Precision.",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
     {
       title: "Smart Dashboard & Control Systems",
       description:
-        "Capture stunning photos effortlessly using our advanced AI technology.",
+        "See Threats Clearly, Understand Deeply, Respond Instantly: The Ultimate Visual Security Solution",
       skeleton: <SkeletonOneLong />,
       className:
         "lg:border-l border-b col-span-1 row-span-2 lg:col-span-2  dark:border-neutral-800",
@@ -56,7 +56,7 @@ export function FeaturesSectionDemo() {
     {
       title: "AI-Powered Automation & Decision-Making",
       description:
-        "Whether its you or Tyler Durden, you can get to know about our product on YouTube",
+        "Real-time Decisions, Optimized Processes: AI for Industrial Advantage",
       skeleton: <SkeletonFour />,
       className:
         "col-span-1 lg:col-span-2 lg:border-r  border-b dark:border-neutral-800",
@@ -448,35 +448,36 @@ export const SkeletonFive = () => {
   return (
     <>
       <div className="relative flex justify-center">
-        <div className="flex items-center justify-center mx-auto  h-75 w-75 md:h-80 md:w-80 rounded-4xl bg-transparent border md:border-gray-600/50 border-gray-0 [animation:spin_8s_linear_infinite_reverse]"></div>
+        <div className="flex items-center justify-center mx-auto  h-75 w-75 md:h-80 md:w-80 rounded-4xl bg-transparent  [animation:spin_8s_linear_infinite_reverse]"></div>
 
         <div className="flex justify-center items-center absolute top-10 mx-auto h-70 w-70 rounded-4xl bg-transparent border border-gray-600/50 [animation:spin_7s_linear_infinite]"></div>
-        <div className="absolute top-10 mx-auto h-70 w-70 rounded-4xl bg-transparent border border-transparent ">
-          <div className=" flex items-center justify-center absolute -left-7 top-10 shadow-lg shadow-red-900/70 h-14 w-14 bg-gray-950 rounded-2xl border border-red-700">
+        <div className="absolute top-10 mx-auto h-70 w-70 rounded-4xl bg-transparent">
+          <div className=" flex items-center justify-center absolute -left-7 top-10 shadow-lg shadow-red-900/70 h-14 w-14 bg-gray-950 rounded-2xl border border-neutral-800">
             <img src="/images/open-cv.png" className="h-10 w-10"></img>
           </div>
-          <div className="flex items-center justify-center absolute -left-7 top-45 shadow-lg shadow-red-900/70  h-14 w-14 bg-gray-950 rounded-2xl border border-red-700">
+          <div className="flex items-center justify-center absolute -left-7 top-45 shadow-lg shadow-red-900/70  h-14 w-14 bg-gray-950 rounded-2xl border border-neutral-800">
             <img src="/images/nvidia.png" className="h-10 w-10"></img>
           </div>
-          <div className=" flex items-center justify-center absolute -right-7 top-45 shadow-lg shadow-red-900/70  h-14 w-14 bg-gray-950 rounded-2xl border border-red-700">
+          <div className=" flex items-center justify-center absolute -right-7 top-45 shadow-lg shadow-red-900/70  h-14 w-14 bg-gray-950 rounded-2xl border border-neutral-800">
             <img src="/images/tensor-flow.png" className="h-10 w-10"></img>
           </div>
-          <div className="flex items-center justify-center absolute -right-7 top-10 shadow-lg shadow-red-900/70  h-14 w-14 bg-gray-950 rounded-2xl border border-red-700">
+          <div className="flex items-center justify-center absolute -right-7 top-10 shadow-lg shadow-red-900/70  h-14 w-14 bg-gray-950 rounded-2xl border border-neutral-800">
             <img src="/images/raspberry-pi.png" className="h-10 w-10"></img>
           </div>
-          <div className=" flex items-center justify-center absolute left-27.5 -top-7 shadow-lg shadow-red-900/70  h-14 w-14 bg-gray-950 rounded-2xl border border-red-700">
+          <div className=" flex items-center justify-center absolute left-27.5 -top-7 shadow-lg shadow-red-900/70  h-14 w-14 bg-gray-950 rounded-2xl border border-neutral-800">
+            <img src="/images/aws.png" className="h-10 w-10"></img>
+          </div>
+          <div className=" flex items-center justify-center absolute left-27.5 -bottom-7 shadow-lg shadow-red-900/70  h-14 w-14 bg-gray-950 rounded-2xl border border-neutral-800">
             <img src="/images/aws.png" className="h-10 w-10"></img>
           </div>
         </div>
         <div className="absolute top-20 mx-auto h-50 w-50 rounded-4xl bg-transparent border border-gray-600/50 [animation:spin_6s_linear_infinite_reverse]"></div>
         <div
-          className="absolute top-35 rounded-sm  flex items-center justify-center p-4  
+          className="absolute top-35 rounded-sm  flex items-center justify-center p-3 
         bg-transparent border-gray-500/60
     shadow-2xl  border-1"
         >
-          <p className="text-black dark:text-red-500 text-xl font-bold">
-            Trinnovate
-          </p>
+          <img src="/images/trinnovate-symbol-white.svg" className="h-10 w-10"></img>
         </div>
       </div>
     </>

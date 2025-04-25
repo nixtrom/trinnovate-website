@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+body {
+  font-family: var(--font-maven-pro), sans-serif;
+}
 
 @theme inline {
   --animate-scroll: scroll var(--animation-duration, 40s)
@@ -23,3 +27,38 @@
     }
   }
 }
+
+
+
+@layer utilities {
+  @keyframes move {
+    0% {
+      transform: translateX(-200px);
+    }
+    100% {
+      transform: translateX(200px);
+    }
+  }
+
+  @keyframes beam {
+    0% {
+      top: 0%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+
+  .animate-move {
+    animation: move 5s linear infinite;
+  }
+
+  .animate-beam {
+    animation: beam 5s linear infinite;
+  }
+}
+
+
+
+
+

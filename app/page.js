@@ -1,37 +1,18 @@
-import Image from "next/image";
-import { GridBackgroundDemo } from "./components/HeroBackground";
-
-import CustomNavBar from "./components/CustomNavBar";
-import { SparklesCore } from "./components/ui/sparkles";
-import { TimelineDemo } from "./components/OurApproch";
-import { TrustedPartnerMarquee } from "./components/TrustedPartnerMarquee";
-import { ContainerTextFlipDemo } from "./components/ContainerParagraph";
-import BadgeButton from "./components/BadgeButton";
-import ResizeableNavbar from "./components/ResizeableNavbar";
-
-import ContactUs from "./components/ContactUs";
-import Footer from "./components/Footer";
-import LampDemo from "./components/LampEffect";
-import ServicesWeOffer, {
-  BentoGridSecondDemo,
-} from "./components/ServicesWeOffer";
-import CTALandingPage from "./components/CTALandingPage";
-import HowWeSolve from "./components/HowWeSolve";
-import { FeaturesSectionDemo } from "./components/FeatureGrid";
-import {
-  IconHandGrab,
-  IconLinkOff,
-  IconPrismLight,
-  IconRectangularPrismPlus,
-} from "@tabler/icons-react";
+import { getSortedPostsData } from "../lib/posts";
+import Main from "./components/Main";
 
 export default function Home() {
+
+  const posts = getSortedPostsData();
+  
+
   return (
     <main>
       <div className=" bg-[#ffffff] dark:bg-[#000000] md:px-10 px-5">
         <div className="w-full max-w-[100vw] flex flex-col justify-center align-center bg-black-400">
+          <Main posts={posts} />
           {/* <CustomNavBar /> */}
-          <ResizeableNavbar />
+          {/* <ResizeableNavbar /> */}
         </div>
       </div>
     </main>

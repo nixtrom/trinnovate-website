@@ -12,7 +12,7 @@ export function GridBackgroundDemo({ text }) {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="relative -top-30 flex lg:flex-row flex-col h-screen w-full items-center justify-center bg-white dark:bg-black">
+    <div className="relative top-0 flex lg:flex-row flex-col h-screen w-full items-center justify-center bg-white dark:bg-black">
       <div
         className={cn(
           "absolute inset-0",

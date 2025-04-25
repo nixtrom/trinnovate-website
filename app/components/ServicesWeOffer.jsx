@@ -43,7 +43,7 @@ const Skeleton = () => (
 const SkeletonOne = () => {
   return (
     <div className="group flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2  dark:bg-black hover:[mask-image:none]">
-      <div className="w-1/4 rounded-2xl bg-white p-1 dark:bg-black border border-neutral-500 flex flex-col items-center justify-center transform transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 rotate-[-5deg] translate-x-5">
+      <div className="w-1/4 rounded-2xl bg-white md:p-1 dark:bg-black border border-neutral-500 flex flex-col items-center justify-center transform transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 md:rotate-[-5deg] md:translate-x-5">
         <img
           className="w-full h-full rounded-2xl object-cover"
           src="/images/underwater-robot.png"
@@ -51,7 +51,7 @@ const SkeletonOne = () => {
         />
       </div>
 
-      <div className="w-1/4 rounded-2xl bg-white p-1 dark:bg-black border border-neutral-500 flex flex-col items-center justify-center relative z-20">
+      <div className="w-1/4 rounded-2xl bg-white md:p-1 dark:bg-black border border-neutral-500 flex flex-col items-center justify-center relative z-20">
         <img
           className="w-full h-full rounded-2xl object-cover"
           src="/images/drone.png"
@@ -59,7 +59,7 @@ const SkeletonOne = () => {
         />
       </div>
 
-      <div className="w-1/4 rounded-2xl bg-white p-1 dark:bg-black border border-neutral-500 flex flex-col items-center justify-center transform transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 rotate-[5deg] -translate-x-5">
+      <div className="w-1/4 rounded-2xl bg-white md:p-1 dark:bg-black border border-neutral-500 flex flex-col items-center justify-center transform transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 md:rotate-[5deg] md:-translate-x-5">
         <img
           className="w-full h-full rounded-2xl object-cover"
           src="/images/land-ugv.png"
@@ -67,7 +67,7 @@ const SkeletonOne = () => {
         />
       </div>
 
-      <div className="w-1/4 rounded-2xl bg-white p-1 dark:bg-black border border-neutral-500 flex flex-col items-center justify-center transform transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 -rotate-[5deg] -translate-x-10">
+      <div className="w-1/4 rounded-2xl bg-white md:p-1 dark:bg-black border border-neutral-500 flex flex-col items-center justify-center transform transition-all duration-300 group-hover:rotate-0 group-hover:translate-x-0 md:-rotate-[5deg] md:-translate-x-10">
         <img
           className="w-full h-full rounded-2xl object-cover"
           src="/images/rooster-drone.jpeg"

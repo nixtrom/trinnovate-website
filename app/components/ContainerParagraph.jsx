@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import { cn } from "../../lib/utils/cn";
 
 export function ContainerTextFlipDemo() {
-  const words = ["solution", "tech", "concept", "product"];
+  const words = ["software", "electronics", "mechanical"];
   return (
     <motion.h1
       initial={{
@@ -19,7 +19,8 @@ export function ContainerTextFlipDemo() {
       layout
     >
       <div className="inline-block">
-        The only one stop <ContainerTextFlip words={words} /> you will ever need
+        Building intelligent systems through <ContainerTextFlip words={words} />{" "}
+        solutions.
         {/* <Blips /> */}
       </div>
     </motion.h1>

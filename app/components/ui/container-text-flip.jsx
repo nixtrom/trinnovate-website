@@ -7,7 +7,7 @@ import { cn } from "../../../lib/utils/cn";
 
 export function ContainerTextFlip({
   words = ["Solution", "Tech", "Concept", "Product"],
-  interval = 3000,
+  interval = 2000,
   className,
   textClassName,
   animationDuration = 700,

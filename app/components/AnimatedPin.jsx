@@ -5,16 +5,13 @@ import { PinContainer } from "./ui/3d-pin";
 export default function AnimatedPinDemo() {
   return (
     <div className="h-[20rem] w-full items-center justify-center hidden xl:flex ">
-      <PinContainer
-        title="Trinnovate"
-        // href="https://twitter.com/mannupaaji"
-      >
+      <PinContainer title="Trinnovate" href="https://twitter.com/mannupaaji">
         <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1 w-[25vw] h-[20rem] ">
           <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
             Address
           </h3>
           <div className="text-base !m-0 !p-0 font-normal">
-            <span className="text-slate-500 ">
+            <span className="text-neutral-500 ">
               6-25, Opp. IDPL Factory, Bhavani Nagar, Balanagar, Hyderabad,
               Telangana 500037
             </span>
