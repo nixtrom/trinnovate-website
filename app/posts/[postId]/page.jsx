@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import React from 'react'
 
 
-export async function generateMetaData({params}) {
+export async function metadata({params}) {
 
   const posts = getSortedPostsData()
   const {postId} = params
