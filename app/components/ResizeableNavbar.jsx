@@ -18,23 +18,23 @@ export default function NavbarDemo() {
   const navItems = [
     {
       name: "About Us",
-      link: "/about",
+      link: "/about-us",
     },
     {
       name: "Services",
-      link: "#pricing",
+      link: "/services",
     },
     {
       name: "Products",
-      link: "#contact",
+      link: "/products",
     },
     {
       name: "Blogs",
-      link: "#contact",
+      link: "/blogs",
     },
     {
       name: "Contact Us",
-      link: "#contact",
+      link: "/contact-us",
     },
   ];
 
@@ -78,15 +78,9 @@ export default function NavbarDemo() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full"
+                href={'/book-a-demo'}
               >
-                Login
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
+                Book a Demo
               </NavbarButton>
             </div>
           </MobileNavMenu>

@@ -4,23 +4,23 @@ import { notFound } from 'next/navigation'
 import React from 'react'
 
 
-export async function metadata({params}) {
+// export async function metadata({params}) {
 
-  const posts = getSortedPostsData()
-  const {postId} = params
+//   const posts = getSortedPostsData()
+//   const {postId} = params
 
-const post = posts.find(post => post.id === postId )
+// const post = posts.find(post => post.id === postId )
 
-if(!post){
-return{
-  title:'post not found'
-}
-}
+// if(!post){
+// return{
+//   title:'post not found'
+// }
+// }
 
-return (
-  post.title
-)
-}
+// return (
+//   post.title
+// )
+// }
 
 
 
@@ -97,9 +97,7 @@ export default  async function Post({params}) {
 
     {/* Back Link */}
     <div className="mt-16">
-      <Link href="/" className="text-blue-600 hover:underline">
-        ← Back to home
-      </Link>
+    <p className="text-md md:text-2xl mb-4">Back to <a href="/" className="text-red-500 underline cursor-pointer">home page</a> </p>
     </div>
   </main>
   )

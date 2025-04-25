@@ -41,7 +41,7 @@ export function FeaturesSectionDemo() {
     {
       title: "Robotics for Every Terrain – Land, Water & Air",
       description:
-        "Robotics that Conquer Land, Water, and Air with Intelligent Precision.",
+        "Robotics that Conquer Land, Water, and Air with Intelligent Precision",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
@@ -64,7 +64,7 @@ export function FeaturesSectionDemo() {
     {
       title: "Real-Time Analytics & Smart Insights",
       description:
-        "Whether its you or Tyler Durden, you can get to know about our product on YouTube",
+        "Unlock the power of your data with live analytics and actionable insights that drive innovation",
       skeleton: <SkeletonThree />,
       className: "col-span-1 lg:col-span-2 border-b lg:border-none",
     },
@@ -78,7 +78,7 @@ export function FeaturesSectionDemo() {
     {
       title: "Advanced Computer Vision & AI Analytics",
       description:
-        "Whether its you or Tyler Durden, you can get to know about our product on YouTube",
+        "See Beyond the Obvious — Advanced Computer Vision Meets Intelligent AI Analytics",
       skeleton: <SkeletonSix />,
       className:
         "col-span-1 lg:col-span-3 border-b lg:border-r lg:border-t lg:border-b-0  dark:border-neutral-800",
@@ -86,7 +86,7 @@ export function FeaturesSectionDemo() {
     {
       title: "Seamless Multi-Platform Integration",
       description:
-        "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS)",
+        "Transforming Data into Insights, Seamlessly Connecting All Your Platforms",
       skeleton: <SkeletonFive />,
       className: "col-span-1 lg:col-span-3 lg:border-t dark:border-neutral-800",
     },
@@ -468,7 +468,7 @@ export const SkeletonFive = () => {
             <img src="/images/aws.png" className="h-10 w-10"></img>
           </div>
           <div className=" flex items-center justify-center absolute left-27.5 -bottom-7 shadow-lg shadow-red-900/70  h-14 w-14 bg-gray-950 rounded-2xl border border-neutral-800">
-            <img src="/images/aws.png" className="h-10 w-10"></img>
+            <img src="/images/solidworks-icon.png" className="h-10 w-11"></img>
           </div>
         </div>
         <div className="absolute top-20 mx-auto h-50 w-50 rounded-4xl bg-transparent border border-gray-600/50 [animation:spin_6s_linear_infinite_reverse]"></div>

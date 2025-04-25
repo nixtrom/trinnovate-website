@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 import React, { useRef, useState } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export const Navbar = ({ children, className }) => {
   const ref = useRef(null);
@@ -62,7 +63,7 @@ export const NavBody = ({ children, className, visible }) => {
         minWidth: "800px",
       }}
       className={cn(
-        "relative z-[60] mx-auto hidden w-full  flex-row items-center justify-between self-start rounded-full bg-transparent px-25 py-4 lg:flex dark:bg-transparent",
+        "relative z-[60] mx-auto hidden w-full  flex-row items-center justify-between self-start rounded-full bg-transparent px-25 py-2 lg:flex dark:bg-transparent",
         visible && "bg-white/80 dark:bg-neutral-950/80",
         className
       )}
@@ -74,6 +75,7 @@ export const NavBody = ({ children, className, visible }) => {
 
 export const NavItems = ({ items, className, onItemClick }) => {
   const [hovered, setHovered] = useState(null);
+  const  pathName = usePathname();
 
   return (
     <motion.div
@@ -83,23 +85,28 @@ export const NavItems = ({ items, className, onItemClick }) => {
         className
       )}
     >
-      {items.map((item, idx) => (
+      {items.map((item, idx) => {
+        const isActive = pathName === item.link;
+        return (
         <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-5 py-2 text-neutral-600 dark:text-white text-lg font-normal"
+          className={cn(
+            "relative px-5 py-2 text-lg font-normal text-neutral-600 dark:text-white",
+            isActive && "font-semibold text-black dark:text-white"
+          )}
           key={`link-${idx}`}
           href={item.link}
         >
-          {hovered === idx && (
-            <motion.div
-              layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800"
-            />
-          )}
+             {(hovered === idx || isActive) && (
+              <motion.div
+                layoutId="hovered"
+                className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800"
+              />
+            )}
           <span className="relative z-20">{item.name}</span>
         </Link>
-      ))}
+      )})}
       
             <NavbarButton variant="primary">Book a Demo</NavbarButton>
           

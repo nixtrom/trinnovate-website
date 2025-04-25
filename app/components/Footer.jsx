@@ -37,39 +37,39 @@ export default function Footer() {
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
-                    href="#"
+                    href="/about-us"
                     className="text-neutral-900 dark:text-gray-400 hover:text-neutral-900"
                   >
-                    All Products
+                    About Us
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="services"
                     className="text-neutral-900 dark:text-gray-400 hover:text-white"
                   >
-                    Studio
+                    Services
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="applications"
                     className="text-neutral-900 dark:text-gray-400 hover:text-white"
                   >
-                    Clients
+                    Application
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="contact-us"
                     className="text-neutral-900 dark:text-gray-400 hover:text-white"
                   >
-                    Pricing
+                    Contact Us
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="blogs"
                     className="text-neutral-900 dark:text-gray-400 hover:text-white"
                   >
                     Blog
@@ -109,7 +109,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/company/trinnovate-synergy-technologies/"
                     className="text-neutral-900 dark:text-gray-400 hover:text-white"
                   >
                     LinkedIn
@@ -118,69 +118,6 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div>
-              <h4 className="text-red-600 dark:text-gray-300 font-semibold">
-                Legal
-              </h4>
-              <ul className="mt-2 space-y-2">
-                <li>
-                  <a
-                    href="#"
-                    className="text-neutral-900 dark:text-gray-400 hover:text-white"
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-neutral-900 dark:text-gray-400 hover:text-white"
-                  >
-                    Terms of Service
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-neutral-900 dark:text-gray-400 hover:text-white"
-                  >
-                    Cookie Policy
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-red-600 dark:text-gray-300 font-semibold">
-                Register
-              </h4>
-              <ul className="mt-2 space-y-2">
-                <li>
-                  <a
-                    href="#"
-                    className="text-neutral-900 dark:text-gray-400 hover:text-white"
-                  >
-                    Sign Up
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-neutral-900 dark:text-gray-400 hover:text-white"
-                  >
-                    Login
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-neutral-900 dark:text-gray-400 hover:text-white"
-                  >
-                    Forgot Password
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
 

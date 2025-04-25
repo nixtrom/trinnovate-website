@@ -31,7 +31,7 @@ export default function Posts({ posts }) {
                src="/images/trinnovate-symbol-white.svg"
                width={28}
                height={28}
-               className="absolute right-0"
+               className="absolute right-0 -bottom-20"
                alt="Trinnovate Logo"
              />
 
@@ -44,21 +44,20 @@ export default function Posts({ posts }) {
               </div>
               <button
                 type="button"
-                class=" cursor-pointer text-white bg-black focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center dark:bg-black/20  dark:focus:ring-blue-800 dark:border dark:border-white backdrop-blur-md w-fit"
+                className=" cursor-pointer text-white bg-black focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center dark:bg-black/20  dark:focus:ring-blue-800 dark:border dark:border-white backdrop-blur-md w-fit"
               >
                 Read More
                 <svg
-                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 14 10"
                 >
                   <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="currentColor"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M1 5h12m0 0L9 1m4 4L9 9"
                   />
                 </svg>
