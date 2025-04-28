@@ -77,7 +77,7 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="lg:py-20  py-5 px-0 lg:px-50 flex xl:flex-row flex-col justify-between items-center md:max-w-8xl max-w-full mx-auto">
+    <div className="lg:py-20  py-5 px-0 lg:px-50 flex xl:flex-row flex-col justify-between items-center w-full mx-auto">
       <div className="flex flex-col gap-10 xl:p-10 p-2 xl:max-w-xl  max-w-full">
         <p className="md:text-6xl text-5xl text-black dark:text-white font-bold">
           Contact <span className="text-red-500">Us</span>{" "}

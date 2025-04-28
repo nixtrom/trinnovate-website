@@ -2,7 +2,7 @@ import SparklesPreview from "./SparklesPreview";
 
 export default function Footer() {
   return (
-    <footer className=" bg-white dark:bg-black text-white py-10 px-5 md:px-20  border-t border-gray-500/20">
+    <footer className=" bg-white dark:bg-black text-white py-10 px-5 md:px-20  border-t border-gray-500/20 w-full">
       <SparklesPreview />
       <div className="max-w-7xl mx-auto">
         {/* Top Section */}

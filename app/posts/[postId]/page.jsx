@@ -4,24 +4,18 @@ import { notFound } from 'next/navigation'
 import React from 'react'
 
 
-// export async function metadata({params}) {
-
-//   const posts = getSortedPostsData()
-//   const {postId} = params
-
-// const post = posts.find(post => post.id === postId )
-
-// if(!post){
-// return{
-//   title:'post not found'
-// }
-// }
-
-// return (
-//   post.title
-// )
-// }
-
+export async function generateStaticParams() {
+  const posts = [
+    { id: "1" },
+    { id: "2" },
+    { id: "3" },
+    { id: "4" },
+  ];
+  
+  return posts.map((post) => ({
+    postId: post.id,
+  }));
+}
 
 
 export default  async function Post({params}) {

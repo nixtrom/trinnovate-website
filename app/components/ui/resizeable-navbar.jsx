@@ -108,7 +108,7 @@ export const NavItems = ({ items, className, onItemClick }) => {
         </Link>
       )})}
       
-            <NavbarButton variant="primary">Book a Demo</NavbarButton>
+            <NavbarButton variant="primary" href={'/book-a-demo'}>Book a Demo</NavbarButton>
           
     </motion.div>
   );
