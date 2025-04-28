@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 function AboutUs() {
 
   const whyChooseTrinnovate = [{title:"Tailored Solutions",text:"We craft bespoke autonomous robotics solutions that address your unique challenges, ensuring optimal performance and seamless integration into your existing systems."},
-    {title:"Cutting-Edge Technology",text:"Our innovations leverage the latest advancements in AI, machine learning, and robotics to push the boundaries of what's possible in automation and efficiency."},
+    {title:"Cutting-Edge Technology",text:"Our innovations leverage the latest advancements in AI, machine learning, and robotics to push the boundaries of what possible in automation and efficiency."},
     {title:"Collaborative Approach",text:"We work closely with our clients, combining our expertise with your industry knowledge to create revolutionary solutions that drive tangible results."},
     {title:"Measurable Impact",text:"Our solutions are designed to deliver quantifiable improvements in productivity, precision, and cost-effectiveness across various industries."},
   ]
@@ -26,7 +26,7 @@ function AboutUs() {
           </p>
           <p className="text-2xl w-full md:text-4xl md:w-[90%] tracking-wide md:tracking-wider">
             {" "}
-            At Trinnovate Synergy Technologies, we're on a mission to
+            At Trinnovate Synergy Technologies, we are on a mission to
             revolutionize industries through cutting-edge autonomous robotics.
             Our expertise spans <span className="text-red-800">air</span> , <span className="text-red-800">ground</span>, and <span className="text-red-800">underwater</span> domains, delivering
             customized solutions that address unique challenges with unmatched
