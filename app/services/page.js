@@ -12,7 +12,7 @@ function Services() {
       subServices: [
         { title: "Drone", icon: "" },
         { title: "Rover", icon: "" },
-        { title: "UnderWater", icon: "" },
+        { title: "Underwater", icon: "" },
         { title: "Robotic Arm", icon: "" },
         { title: "Quadraped", icon: "" },
         { title: "Hybrid", icon: "" },
@@ -67,7 +67,9 @@ function Services() {
               <div className="flex flex-wrap gap-10 justify-start">
   {service.subServices.map((subService, index) => (
     <div key={index} className=" mx-auto w-[90%] md:w-[25%] min-w-[100px] flex flex-col items-center">
-      <div className="h-40 md:h-30 w-[100%] mx-auto md:w-40 rounded-md bg-gradient-to-br from-neutral-600 to-neutral-900 mb-4"></div>
+      <div className="flex p-6 items-center justify-center h-40 md:h-30 w-[100%] mx-auto md:w-40 rounded-md bg-gradient-to-br from-neutral-600 to-neutral-900 mb-4">
+        <img alt={`${subService.title}`} className="" src={`/images/services/${subService.title}.svg`}></img>
+      </div>
       <p className="text-center">{subService.title}</p>
     </div>
   ))}

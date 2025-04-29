@@ -163,10 +163,10 @@ const Main = ({posts}) => {
       </div>
       <BentoGridSecondDemo />
 
-      <h2 className="text-4xl md:text-5xl font-bold  text-black dark:text-white max-w-full text-center mt-40 pb-10">
+      {/* <h2 className="text-4xl md:text-5xl font-bold  text-black dark:text-white max-w-full text-center mt-40 pb-10">
          Our Latest Blog <span className="text-red-500">Posts</span>
         </h2>
-      <Posts posts={posts}/>
+      <Posts posts={posts}/> */}
 
       <div className="mt-40">
         <ContactUs />

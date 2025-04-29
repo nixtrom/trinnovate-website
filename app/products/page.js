@@ -7,34 +7,44 @@ function Applications() {
   const applications = [
     {
       icon: "",
-      title: "DEFENSE AND SECURITY",
+      title: "Applications",
       text: "We design autonomous systems to enhance surveillance, reconnaissance, and tactical operations. Our solutions ensure mission success with precision, reliability, and safety.",
       subApplications: [
-        { title: "Armed Force", icon: "" },
-        { title: "Threat Assesment", icon: "" },
-        { title: "Disaster Management", icon: "" },
-        { title: "Naval Defense", icon: "" },
-        { title: "Infrastructure Protection", icon: "" },
-        { title: "Counter Terrorism ", icon: "" },
+        { title: "Defense", icon: "" },
+        { title: "Industries", icon: "" },
+        { title: "Education", icon: "" },
       ],
     },
-    {
-      icon: "",
-      title: "INDUSTRIES",
-      text: "We deliver intelligent automation to optimize manufacturing, logistics, and inspection processes. Our technologies drive efficiency, reduce costs, and future-proof industrial operations.",
-      subApplications: [
-        { title: "WareHouse Robotics", icon: "" },
-        { title: "Infrastructure Robotics", icon: "" },
-      ],
-    },
-    {
-      icon: "",
-      title: "EDUCATION AND RESEARCH",
-      text: "We enable innovation by providing advanced robotic platforms for academic learning and scientific exploration. Our solutions foster creativity, experimentation, and breakthrough discoveries.",
-      subApplications: [
-        { title: "Autonomous Robotics Center", icon: "" },
-      ],
-    },
+    // {
+    //   icon: "",
+    //   title: "DEFENSE AND SECURITY",
+    //   text: "We design autonomous systems to enhance surveillance, reconnaissance, and tactical operations. Our solutions ensure mission success with precision, reliability, and safety.",
+    //   subApplications: [
+    //     { title: "Armed Force", icon: "" },
+    //     { title: "Threat Assesment", icon: "" },
+    //     { title: "Disaster Management", icon: "" },
+    //     { title: "Naval Defense", icon: "" },
+    //     { title: "Infrastructure Protection", icon: "" },
+    //     { title: "Counter Terrorism ", icon: "" },
+    //   ],
+    // },
+    // {
+    //   icon: "",
+    //   title: "INDUSTRIES",
+    //   text: "We deliver intelligent automation to optimize manufacturing, logistics, and inspection processes. Our technologies drive efficiency, reduce costs, and future-proof industrial operations.",
+    //   subApplications: [
+    //     { title: "WareHouse Robotics", icon: "" },
+    //     { title: "Infrastructure Robotics", icon: "" },
+    //   ],
+    // },
+    // {
+    //   icon: "",
+    //   title: "EDUCATION AND RESEARCH",
+    //   text: "We enable innovation by providing advanced robotic platforms for academic learning and scientific exploration. Our solutions foster creativity, experimentation, and breakthrough discoveries.",
+    //   subApplications: [
+    //     { title: "Autonomous Robotics Center", icon: "" },
+    //   ],
+    // },
   ];
   return (
     <div className=" w-screen h-full flex flex-col gap-20 bg-black pt-40">
@@ -60,7 +70,9 @@ function Applications() {
               <div className="flex flex-wrap gap-10 justify-start">
   {application.subApplications.map((subApplication, index) => (
     <div key={index} className=" mx-auto w-[90%] md:w-[25%] min-w-[100px] flex flex-col items-center">
-      <div className="h-40 md:h-30 w-[100%] mx-auto md:w-40 rounded-md bg-gradient-to-br from-neutral-600 to-neutral-900 mb-4"></div>
+       <div className="flex p-6 items-center justify-center h-40 md:h-30 w-[100%] mx-auto md:w-40 rounded-md bg-gradient-to-br from-neutral-600 to-neutral-900 mb-4">
+        <img alt={`${subApplication.title}`} className="" src={`/images/products/${subApplication.title}.svg`}></img>
+      </div>
       <p className="text-center">{subApplication.title}</p>
     </div>
   ))}
