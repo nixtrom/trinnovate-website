@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  assetPrefix: '/trinnovate-website/',
+  assetPrefix: '.',
   images: {
     domains: ["assets.aceternity.com"], // Add the domain you want to allow here
   },
